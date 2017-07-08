@@ -1,17 +1,19 @@
 {
   "name": "tangled",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "Tangled: Untangles your strings, and maybe your hair too.",
   "main": "index.js",
   "repository": "git@github.com:jsbites/tangled.git",
   "author": "Volkan Özçelik <me@volkan.io> (https://volkan.io/)",
   "license": "MIT",
   "keywords": [
+    "byte",
     "byte-sized javascript",
     "byte-sized",
     "bytesized.tv",
     "demos",
     "education",
+    "helper",
     "javascript",
     "learning",
     "podcast",
@@ -21,6 +23,7 @@
     "strings",
     "tangled",
     "tutorials",
+    "utilities",
     "vidcast",
     "videocast",
     "videos"
@@ -28,5 +31,5 @@
   "bugs": {
     "url": "https://github.com/jsbites/tangled/issues"
   },
-  "homepage": "https://bytesized.tv/",
+  "homepage": "https://bytesized.tv/"
 }
