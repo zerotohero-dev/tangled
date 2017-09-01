@@ -1,3 +1,5 @@
+const GUID_SEPARATOR = '___';
+
 const fromJson = ( data ) => {
     try {
         return JSON.stringify( data );
