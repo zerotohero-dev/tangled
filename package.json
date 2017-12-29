@@ -1,11 +1,19 @@
 {
   "name": "tangled",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "description": "Tangled: Untangles your strings, and maybe your hair too.",
   "main": "index.js",
   "repository": "git@github.com:jsbites/tangled.git",
   "author": "Volkan Özçelik <me@volkan.io> (https://volkan.io/)",
   "license": "MIT",
+  "scripts": {
+    "test": "bin/test.sh",
+    "precommit": "bin/precommit.sh",
+    "lint": "bin/lint.sh"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
+  },
   "keywords": [
     "byte",
     "byte-sized javascript",
@@ -34,5 +42,14 @@
   "homepage": "https://bytesized.tv/",
   "dependencies": {
     "@std/esm": "^0.18.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-jsbites": "^2.1.2",
+    "eslint-plugin-babel": "^4.1.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.2"
   }
 }

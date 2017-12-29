@@ -1,2 +1,11 @@
+```text
+  / /
+ / / \
+( ( ) tangled
+ \ / /        untangles your strings…
+  / /           and maybe your hair, too.
+```
+
 # tangled
-Unangles your strings, and maybe your hair too.
+
+Untangles your strings, and maybe your hair too.
