@@ -1,9 +1,9 @@
 ```text
-__.-._
-'-._"7'  JediFocus
- /'.-c
- |  /T   Do. Or do not.
-_)_/LI
+  / /
+ / / \
+( ( ) tangled
+ \ / /        Untangles your strings…
+  / /           And maybe, your hair, too.
 ```
 
 ## The MIT License (_MIT_)

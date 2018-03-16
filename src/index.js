@@ -13,7 +13,7 @@
  *  Send your comments, suggestions, and feedback to me@volkan.io
  */
 
-//
+// @flow
 
 import showdown from 'showdown';
 
@@ -26,7 +26,7 @@ const converter = new showdown.Converter({
 
 const GUID_SEPARATOR = '___';
 
-const fromJson = data => {
+const fromJson = (data: any) => {
   try {
     return JSON.stringify(data);
   } catch (ignore) {
@@ -36,7 +36,7 @@ const fromJson = data => {
   }
 };
 
-const slugify = str =>
+const slugify = (str: string) =>
   `${str}`
     .toLowerCase()
     .replace(/\s+/g, '-')
@@ -62,10 +62,10 @@ const guidWithTimestamp = () => `${guid()}${GUID_SEPARATOR}${timestamp()}`;
 const guidWithNegativeTimestamp = () =>
   `${guid()}${GUID_SEPARATOR}${-1 * parseInt(timestamp(), 10)}`;
 
-const getTimestampFromGuid = timestampedGuid =>
+const getTimestampFromGuid = (timestampedGuid: string) =>
   parseInt(timestampedGuid.split(GUID_SEPARATOR)[1], 10);
 
-const markdown = text => converter.makeHtml(text);
+const markdown = (text: string): string => converter.makeHtml(text);
 
 export {
   fromJson,

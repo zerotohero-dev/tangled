@@ -7,10 +7,9 @@
   / /
  / / \
 ( ( ) tangled
- \ / /        untangles your strings…
-  / /           and maybe your hair, too.
+ \ / /        Untangles your strings…
+  / /           And maybe, your hair, too.
 ```
-
 
 [tests]: https://img.shields.io/travis/jsbites/tangled.svg
 [tests-url]: https://travis-ci.org/jsbites/tangled

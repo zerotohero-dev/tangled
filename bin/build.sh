@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #
 #   / /
 #  / / \
@@ -13,6 +15,28 @@
 #  Send your comments, suggestions, and feedback to me@volkan.io
 #
 
-language: node_js
-node_js:
-  - "9.0.0"
+rm -rf lib
+
+if [ $? -gt 0 ]
+then
+  echo "Build failed: 000."
+  exit 1
+fi
+
+flow-remove-types --pretty src/ -d lib/
+
+if [ $? -gt 0 ]
+then
+  echo "Build failed: 001."
+  exit 1
+fi
+
+flow-copy-source -v src lib
+
+if [ $? -gt 0 ]
+then
+  echo "Build failed: 002."
+  exit 1
+fi
+
+echo "Everything is awesome!"
